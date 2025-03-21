@@ -1,19 +1,132 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yu Jia Chang - 個人網站</title>
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        h1 { color: #333; }
-        a { color: blue; text-decoration: none; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+            margin-top: 10px;
+        }
+        p {
+            color: #666;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .linkedin {
+            background-color: #0077b5;
+        }
+        .linkedin:hover {
+            background-color: #005582;
+        }
+        .resume {
+            background-color: #28a745;
+        }
+        .resume:hover {
+            background-color: #1e7e34;
+        }
+        .section {
+            text-align: left;
+            margin-top: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #0077b5;
+            display: inline-block;
+            padding-bottom: 5px;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-    <h1>歡迎來到我的個人網站</h1>
-    <p>我是 Yu Jia Chang，這是我的個人網站，展示我的履歷與作品。</p>
-    <p><a href="resume.pdf">點擊這裡下載我的履歷</a></p>
-    <p>聯絡方式：yuchia901004@gmail.com</p>
+
+    <div class="container">
+        <header>
+            <img src="2025032101.jpg" alt="Your Photo">
+            <h1>Your Name</h1>
+            <p>Passionate about finance, technology, and innovation.</p>
+        </header>
+
+        <nav>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="btn linkedin">LinkedIn</a>
+            <a href="CV_20250321.pdf" target="_blank" class="btn resume">Download Resume</a>
+        </nav>
+
+        <section class="section">
+            <h2>About Me</h2>
+            <p>I am currently studying Economics and have a strong interest in supply chain management, finance, and AI.</p>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Financial Analysis</li>
+                <li>Data Science (Python, SQL, Machine Learning)</li>
+                <li>Supply Chain Optimization</li>
+                <li>Web Development (HTML, CSS, JavaScript)</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Stock Prediction Model:</strong> Developed a Python-based stock price prediction model using machine learning.</li>
+                <li><strong>Portfolio Website:</strong> Created a responsive personal portfolio website using HTML, CSS, and GitHub Pages.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </section>
+    </div>
+
 </body>
 </html>
